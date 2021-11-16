@@ -7,7 +7,7 @@
     <article class="post">
         <!-- post attributes are defined in models.py -->
         <time class="date">published: {{ post.published_date }}</time>
-        <h2><a href="">{{ post.title }}</a></h2>
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
         <!-- |linebreaksbr is piping the posts' text through 
             a filter to convert line-breaks into paragraphs -->
