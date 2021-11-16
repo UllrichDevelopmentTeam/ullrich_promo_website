@@ -4,7 +4,7 @@ Description of the software:
 Blog built based off the DjangoGirls blog tutorial.
 
 Purpose for writing this software:
-Built by Jacob Farr in order to better learn Django. Here is a link to the website: [#](#).
+Built by the Development Team at Ullrich Insurance in order to better learn Django. Here is a link to the website: [#](#).
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
 
