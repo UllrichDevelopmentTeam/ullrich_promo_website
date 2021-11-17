@@ -1,14 +1,18 @@
-from django.shortcuts import render
-from .models import Post
-from django.utils import timezone
+"""
+Request and pass information from a model (ex. Post) to a template.
+These views are Python functions with blog logic.
+"""
+
+from django.shortcuts import render # function to put-together templates
+from .models import Post # model to pull information
+from django.utils import timezone 
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 
 def post_list(request):
     """
-    Render (put together) our template blog/post_list.html
-    Requires a request to run.
+    Show a list of posts.
     """
     # posts is a Queryset of all Posts
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

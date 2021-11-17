@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # Admin URL path (the path 'admin/' points to the view admin.site.urls)
     path('admin/', admin.site.urls),
+    # Landing Page path (the empty path '' redirects to the blog.urls module)
     path('', include('blog.urls')),
 ]
