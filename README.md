@@ -6,6 +6,10 @@ Blog built based off the DjangoGirls blog tutorial.
 Purpose for writing this software:
 Built by the Development Team at Ullrich Insurance in order to better learn Django. Here is a link to the website: [#](#).
 
+Admin Login Info:
+user : admin
+pass : admin
+
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
 
 [Software Demo Video](http://youtube.link.goes.here)
