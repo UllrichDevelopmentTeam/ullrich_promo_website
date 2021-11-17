@@ -1,21 +1,22 @@
 <!--
-    Template for generating a list of posts. 
-    Extends the base template.
+    Template for showing a list of posts. 
+    Receives list of posts from blog.views
 -->
 
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <!-- Use Django template tags to show the posts (passed from views.py, created in models.py) -->
+    <!-- 
+        Django understands posts as a list of objects.
+        Therefore, loop through the posts to show them in HTML.
+        The pk is data associated with an individual post which
+        is created by default. Check blog.views for more.
+    -->
     {% for post in posts %}
-    <!-- Django understands posts as a list of objects. -->
     <article class="post">
-        <!-- post attributes are defined in models.py -->
         <time class="date">published: {{ post.published_date }}</time>
         <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
-        <!-- |linebreaksbr is piping the posts' text through 
-            a filter to convert line-breaks into paragraphs -->
     </article>
     {% endfor %}
 {% endblock %}
