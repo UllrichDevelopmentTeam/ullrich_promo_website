@@ -8,7 +8,7 @@ __pycache__
 myvenv/
 venv/
 
-# Database
+# Local Database... must create new superuser on production site.
 db.sqlite3
 
 # Static folder at project root

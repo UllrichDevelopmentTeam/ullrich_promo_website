@@ -10,9 +10,14 @@ from django.contrib import admin
 from .models import Post # we created this one in blog.models.py
 
 """
-Make our model visible on the admin page.
-To create a superuser (a user account that has control over everything on the site)
-Enter the following command:
+Register our models with the admin site.
+In this case, models register under the blog app.
+
+To create a superuser enter this command:
 python manage.py createsuperuser
+
+Admin Page Login Info (ex. http://127.0.0.1:8000/admin/)
+user : admin
+pass : admin
 """
 admin.site.register(Post)
