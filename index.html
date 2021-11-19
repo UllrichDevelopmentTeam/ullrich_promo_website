@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !add meta data for keyworks and other things here!  (can copy or use similar ones from Ullrich Insurance site)-->
+    <!-- for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="shortcut icon" href="public/images/CFILogoWB.png" type="image/x-icon">
+    <title>Colorado Family Insurance</title>
+</head>
+<body>   
+    <!-- header and nav bar -->
+    <!-- dont make the header a container, or it will not look good! -->
+    <header class="mb-3">
+      <!-- fixed-top makes it so that the nav bar scrolls with the user -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- if we want the links to be in the center use:  justify-content-center if we want at the end use: justify-content-end -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <!-- these links will be "anchor" links (since it is a single page site) -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+          <!-- this used to be in the header/ need to make full width -->
+         <div class="hero-img hero-banner">
+        <!-- could use align-middle instead of translate-middle position-absolute top-50 start-50 (looks a little different thought) -->
+        <!-- might not want this to say "colorado family insurance" if the logo is at the top -->
+        <h1 class="hero-text translate-middle position-absolute top-50 start-50">Colorado Family Insurance</h1>
+    </div>
+    </header>
+    
+    <!-- testing bootstrap 5's grid system -->
+    <div class="container">
+      <h1>A H1 Header</h1>
+      <div class="row">
+        <div class="col">
+          <img src="public/images/CFILogo.png" alt="">
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>A H2 Header</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum fugit ab commodi atque! Perspiciatis sapiente tempora nihil quasi autem?</p>
+    </div>
+
+    <!-- use columns and rows for a good footer, look at examples on the web -->
+    <footer class="bg-dark mt-auto py-2">
+      <p class="text-center text-light">Footer</p>
+    </footer>
+
+    <!-- for any bootstrap javascript you may need -->
+    <!-- might not need this/ may be able to delete, but can keep for safety -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

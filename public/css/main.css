@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/familyPic.png");
+    /* 100vh makes it the whole screen */
+    height: 100vh; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.hero-text{
+    text-align: center;
+    color: white;
+    /* 600 = semi-bold 700 = bold */
+    font-weight: 600;
+    /* might want to mess around with the size */
+    font-size: 4.25rem;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2,h3{
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+h1{
+    /* h1 uses the primary color */
+    color:#25A55F;
+}
+
+h2{
+    /* h2 uses the secondary color (can change this) */
+    color:#346473;
+}
