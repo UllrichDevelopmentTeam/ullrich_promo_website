@@ -11,9 +11,6 @@ venv/
 # Local Database... must create new superuser on production site.
 db.sqlite3
 
-# Static folder at project root
-/static/
-
 # macOS
 ._*
 .DS_Store
